@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Boostrap CSS link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="/stylesheets/style.css" type="text/css" rel="stylesheet">
+  <style>
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><B>NutriDish</B></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/"><B>| Home |</B><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sign-up"><B>| Sign-Up |</B></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/members"><B>| Search |</B></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout"><B>| Logout |</B></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- parallax image -->
+  <div class="parallax">
+    <h1 class="title"><span class="b-green">N</span><span class="text-white">utri</span><span
+        class="b-green">D</span><span class="text-white">ish<span class="b-green">.</span></h1>
+  </div>
+  <!-- Insert dropdown container here -->
+  <div class="container" id="recipesDiv">
+    <section>
+      <div class="row_body">
+        {{{ body }}}
+      </div>
+    </section>
+    <div class="row">
+      <div class="col">
+        <!-- Modal to prompt user to sign-up -->
+        <div class="modal fade noLogin" role="dialog" id="noLoginFound">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Please Read Below</h4>
+              </div>
+              <div class="modal-body">
+                Your email was not found or password did not match account
+                Click button below if you would like to create a login
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <a type="button" class="btn btn-danger" id="modalSignUpButton" href="/sign-up">Create a login</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+   <!-- Footer location -->
+  </footer>
+  <!-- Link to Jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <!-- Link for import of external Javascript Files -->
+  <script type="text/javascript" src="/js/login.js"></script>
+  <script type="text/javascript" src="/js/signup.js"></script>
+  <script type="text/javascript" src="/js/member.js"></script>
+  <!-- Links to boostrap Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+ {{!-- Link for google jquery --}}
+  {{!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> --}}
+    {{!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.4.1/jquery.min.js"></script> --}}
+  <!-- Bootstrap Javascript Link -->
+  {{!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script> --}}
